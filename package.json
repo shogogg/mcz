@@ -1,11 +1,11 @@
 {
   "name": "mcz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple pattern matching library for TypeScript/JavaScript",
   "author": "shogogg <shogo@studiofly.net>",
   "license": "MIT",
-  "main": "lib/reni.js",
-  "typings": "lib/reni.d.ts",
+  "main": "lib/match.js",
+  "typings": "lib/match.d.ts",
   "keywords": ["pattern match", "pattern", "match", "TypeScript"],
   "repository": {
     "type": "git",
