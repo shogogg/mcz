@@ -1,0 +1,32 @@
+{
+  "name": "mcz",
+  "version": "1.0.0",
+  "description": "A simple pattern matching library for TypeScript/JavaScript",
+  "author": "shogogg <shogo@studiofly.net>",
+  "license": "MIT",
+  "main": "lib/reni.js",
+  "typings": "lib/reni.d.ts",
+  "keywords": ["pattern match", "pattern", "match", "TypeScript"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shogogg/mcz.git"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "clean:all": "rimraf lib node_modules typings",
+    "pretest": "npm run build",
+    "test": "mocha --reporter spec --compilers ts:espower-typescript/guess test/*.ts",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "espower-typescript": "^5.0.1",
+    "mocha": "^2.4.5",
+    "power-assert": "^1.3.1",
+    "rimraf": "^2.5.2",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12"
+  }
+}
