@@ -10,7 +10,6 @@
     "outDir": "lib"
   },
   "files": [
-    "typings/main.d.ts",
     "src/match.ts"
   ]
 }
