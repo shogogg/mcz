@@ -1,6 +1,6 @@
 {
   "name": "mcz",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple pattern matching library for TypeScript/JavaScript",
   "author": "shogogg <shogo@studiofly.net>",
   "license": "MIT",
@@ -17,11 +17,10 @@
     "url": "https://github.com/shogogg/mcz.git"
   },
   "scripts": {
-    "postinstall": "typings install",
     "prebuild": "npm run clean",
     "build": "tsc",
     "clean": "rimraf lib",
-    "clean:all": "rimraf lib node_modules typings",
+    "clean:all": "rimraf lib node_modules",
     "pretest": "npm run build",
     "test": "mocha --reporter spec --compilers ts:espower-typescript/guess test/*.ts",
     "prepublish": "npm run build"
@@ -35,7 +34,6 @@
     "mocha": "^2.4.5",
     "power-assert": "^1.3.1",
     "rimraf": "^2.5.2",
-    "typescript": "^1.8.9",
-    "typings": "^0.7.12"
+    "typescript": "^1.8.9"
   }
 }
